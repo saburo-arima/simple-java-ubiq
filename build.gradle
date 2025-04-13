@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.example.ubiq'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'com.ubiqsecurity', name: 'ubiqsecurity', version: '2.2.2'
+    implementation 'com.opencsv:opencsv:5.7.1'
+    implementation 'org.bouncycastle:bcprov-jdk18on:1.76'
+    implementation 'org.bouncycastle:bcutil-jdk18on:1.76'
+    implementation 'org.bouncycastle:bcpkix-jdk18on:1.76'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.0'
+}
+
+application {
+    mainClass = 'com.example.ubiq.MyNumberEncryptionApp'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.example.ubiq.MyNumberEncryptionApp'
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+} 

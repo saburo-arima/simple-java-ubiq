@@ -1,0 +1,44 @@
+# 資格情報ファイル
+src/main/resources/credentials.json
+
+# Gradle関連
+.gradle/
+build/
+bin/
+out/
+gradle-app.setting
+.gradletasknamecache
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Javaコンパイル
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# IDE設定
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+.vscode/
+*.swp
+*.bak
+
+# OS生成ファイル
+.DS_Store
+Thumbs.db
+*~
+*.lock
+*.log
+
+# アプリケーション固有
+log/
+logs/
+*.log
+*.tmp 

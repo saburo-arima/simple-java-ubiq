@@ -1,0 +1,6 @@
+Employee ID,Full Name,Name (Phonetic),Department,Position,Hire Date,Birth Date,Gender,Phone Number,Email,Tax ID
+E000000001,John Smith,JOHN SMITH,Sales,Manager,2010-04-01,1980-05-15,Male,555-123-4567,john.smith@example.com,123-45-6789
+E000000002,Emily Johnson,EMILY JOHNSON,HumanResouces,Team Lead,2012-04-01,1985-08-23,Female,555-234-5678,emily.johnson@example.com,234-56-7890
+E000000003,Robert Williams,ROBERT WILLIAMS,Development,Director,2005-04-01,1975-11-30,Male,555-345-6789,robert.williams@example.com,345-67-8901
+E000000004,Sarah Brown,SARAH BROWN,Sales,Associate,2018-04-01,1990-02-14,Female,555-456-7890,sarah.brown@example.com,456-78-9012
+E000000005,Michael Davis,MICHAEL DAVIS,Development,Team Leader,2014-04-01,1983-07-07,Male,555-567-8901,michael.davis@example.com,567-89-0123 
