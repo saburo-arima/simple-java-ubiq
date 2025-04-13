@@ -20,7 +20,7 @@ dependencies {
 }
 
 application {
-    mainClass = 'com.example.ubiq.MyNumberEncryptionApp'
+    mainClass = 'com.example.ubiq.AppUbiqEncryptDecrypt'
 }
 
 java {
