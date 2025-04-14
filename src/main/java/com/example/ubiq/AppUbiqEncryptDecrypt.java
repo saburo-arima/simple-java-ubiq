@@ -60,7 +60,7 @@ public class AppUbiqEncryptDecrypt {
         } catch (IOException e) {
             System.err.println("Failed to load credentials: " + e.getMessage());
             System.err.println("Using default credentials.");
-            initializeDefaultCredentials();
+
         }
 
         // 1. Encryption process
@@ -95,25 +95,7 @@ public class AppUbiqEncryptDecrypt {
         }
     }
 
-    /**
-     * Initialize default credentials (fallback when JSON file loading fails)
-     */
-    private static void initializeDefaultCredentials() {
-        myNumberCredentials = UbiqFactory.createCredentials(
-            "xg4zjDF4nd138aP0mPJqdoUC",
-            "/5rtAvGn9aX22DZi4WKG80h7lqH1qm7eedV2leI0iNvm",
-            "ycLP7YBE1hKjXkW4zMUeOt/FkyctvlBPFyuQlVdBudrh",
-            null);
 
-        generalCredentials = UbiqFactory.createCredentials(
-            "7Uq96Qo5IYodCc26oqvm6Yyf",
-            "KIftGroBJHXqHFMVMQBDeRfqWiK58e/fpT7GB8O+m3rj",
-            "JrfmAQCmuDzNzTrkM+tA0+Viy8Pf6brrnbnounurqwzE",
-            null);
-        
-        myNumberDatasetName = "mynumber";
-        generalDatasetName = "general";
-    }
 
     /**
      * Create a CSVParser
